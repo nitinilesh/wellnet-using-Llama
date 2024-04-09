@@ -11,3 +11,5 @@ RAM: 8 GB
 Disk space: 7 GB
 GPU: None (CPU only)
 It is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers.
+
+LOOK and Website view of CHATBOT
