@@ -1,15 +1,57 @@
-The Llama-2-7B-Chat-GGML-Medical-Chatbot is a repository for a medical chatbot that uses the Llama-2-7B-Chat-GGML model and the pdf The Gale Encyclopedia of Medicine. The chatbot is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers. The chatbot can be used to answer questions about medical topics, provide summaries of medical articles, and generate medical text. However, it is important to note that the chatbot is not a substitute for medical advice from a qualified healthcare professional.
+# 🧠 WellNet — Medical AI Chatbot using Llama-2
 
-Model: Know more about model Llama-2-7B-Chat-GGML
+A powerful **medical AI chatbot** built using the **Llama-2-7B-Chat-GGML language model** and medical knowledge from *The Gale Encyclopedia of Medicine*.  
+This system combines **Large Language Models (LLMs)** with **vector search, embeddings, and retrieval-augmented generation (RAG)** to answer medical questions accurately.
 
-It is trained on the pdf The Gale Encyclopedia of Medicine, Volume 1, 2nd Edition, 637-page PDF, which is a comprehensive medical reference that provides information on a wide range of medical topics. This means that the chatbot is able to answer questions about a variety of medical topics.
+⚠️ **Disclaimer:** This tool is for informational purposes only and is **NOT** a substitute for professional medical advice.
 
-This is a sophisticated medical chatbot, developed using Llama-2 7B and Sentence Transformers. Powered by Langchain and Pinecone and Huggingface model, This bot operates on a powerful CPU computer that boasts a minimum of
-Operating system: Linux, macOS, or Windows
-CPU: Intel® Core™ i5
-RAM: 8 GB
-Disk space: 7 GB
-GPU: None (CPU only)
-It is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers.
+---
 
-LOOK and Website view of CHATBOT
+## 🔍 Project Overview
+
+WellNet is an **AI-powered medical assistant** designed to:
+- Understand natural language
+- Search a trusted medical knowledge base
+- Generate accurate, contextual responses
+
+The system uses:
+- **LLaMA-2** for reasoning and text generation  
+- **Sentence Transformers** for embeddings  
+- **LangChain** for LLM orchestration  
+- **Vector databases (Pinecone / FAISS)** for fast similarity search  
+- **Flask + Bootstrap** for a clean web interface  
+
+The chatbot runs fully on **CPU** — no GPU required — making it accessible on normal laptops.
+
+---
+
+## 🧠 Key Features
+
+✔ Natural language medical Q&A  
+✔ Knowledge-based answers from real medical references  
+✔ Context-aware conversations  
+✔ Retrieval-Augmented Generation (RAG)  
+✔ Vector similarity search  
+✔ CPU-only execution  
+✔ Web-based UI  
+✔ Modular, reusable, scalable codebase  
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|----------|---------|
+| Python | Core backend |
+| Llama-2-7B-Chat-GGML | Large Language Model |
+| LangChain | LLM orchestration |
+| Sentence Transformers | Text embeddings |
+| Pinecone / FAISS | Vector search |
+| Flask | Backend web server |
+| Bootstrap | UI styling |
+| PDF Loader | Medical document processing |
+
+---
+
+## 📦 Repository Structure
+
