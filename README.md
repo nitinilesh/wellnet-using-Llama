@@ -55,3 +55,25 @@ The chatbot runs fully on **CPU** — no GPU required — making it accessible o
 
 ## 📦 Repository Structure
 
+wellnet-using-llama/
+│
+├── model/ # LLaMA-2 model loading & inference
+├── data/ # Medical PDFs (Gale Encyclopedia)
+├── embeddings/ # Generated vector embeddings
+├── vector_store/ # Pinecone / FAISS indexes
+│
+├── src/
+│ ├── loader.py # Load PDFs
+│ ├── chunker.py # Split text into chunks
+│ ├── embedder.py # Generate embeddings
+│ ├── retriever.py # Fetch relevant medical content
+│ ├── chatbot.py # LLM + RAG pipeline
+│ └── config.py # Environment & model config
+│
+├── templates/ # Flask HTML templates
+├── static/ # CSS, JS, images
+│
+├── app.py # Flask app entry
+├── store_index.py # Build vector database
+├── requirements.txt
+└── README.md
