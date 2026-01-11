@@ -57,23 +57,25 @@ The chatbot runs fully on **CPU** — no GPU required — making it accessible o
 
 wellnet-using-llama/
 │
-├── model/ # LLaMA-2 model loading & inference
 ├── data/ # Medical PDFs (Gale Encyclopedia)
-├── embeddings/ # Generated vector embeddings
-├── vector_store/ # Pinecone / FAISS indexes
+├── models/ # LLaMA-2 GGML model files
+├── vector_db/ # FAISS / Pinecone indexes
+├── embeddings/ # Generated document embeddings
 │
-├── src/
-│ ├── loader.py # Load PDFs
-│ ├── chunker.py # Split text into chunks
-│ ├── embedder.py # Generate embeddings
-│ ├── retriever.py # Fetch relevant medical content
-│ ├── chatbot.py # LLM + RAG pipeline
-│ └── config.py # Environment & model config
+├── backend/
+│ ├── document_loader.py # Loads and parses PDF documents
+│ ├── text_splitter.py # Breaks text into chunks
+│ ├── embedding_engine.py # Converts text into embeddings
+│ ├── retriever.py # Finds relevant medical context
+│ ├── llm_engine.py # LLaMA-2 inference logic
+│ ├── rag_pipeline.py # Retrieval-Augmented Generation
+│ └── config.py # Environment & model settings
 │
-├── templates/ # Flask HTML templates
-├── static/ # CSS, JS, images
+├── web/
+│ ├── app.py # Flask web server
+│ ├── templates/ # HTML pages (Bootstrap UI)
+│ └── static/ # CSS, JS, images
 │
-├── app.py # Flask app entry
-├── store_index.py # Build vector database
-├── requirements.txt
-└── README.md
+├── build_index.py # Script to build vector database
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
