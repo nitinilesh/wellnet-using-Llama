@@ -29,7 +29,7 @@ The chatbot runs fully on **CPU** — no GPU required — making it accessible o
 
 ✔ Natural language medical Q&A  
 ✔ Knowledge-based answers from real medical references  
-✔ Context-aware conversations  
+✔ Context-aware conversation
 ✔ Retrieval-Augmented Generation (RAG)  
 ✔ Vector similarity search  
 ✔ CPU-only execution  
